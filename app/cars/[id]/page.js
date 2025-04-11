@@ -39,7 +39,7 @@ const Page = async ({params}) => {
 
           <p className='text-gray-900 text-xl font-bold'>${car.price.toLocaleString()}</p>
           <div className='flex gap-4'>
-            <button className='px-4 py-2 rounded-md font-semibold border hover:bg-gray-900 hover:text-white cursor-pointer'>Add to wishlist</button>
+            <button className='px-4 py-2 rounded-md font-semibold border cursor-pointer'><img src="/heart.svg" alt="" /></button>
             <button className='px-4 py-2 rounded-md font-semibold border hover:bg-gray-900 hover:text-white cursor-pointer'>Buy Now</button>
           </div>
       </div>
