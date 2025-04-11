@@ -9,10 +9,9 @@ const CarList = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [total, setTotal] = useState(0);
-  const [wishlist, setWishlist] = useState([]);
   const limit = 10;
 
-  const { filters, page, setPage } = useCarContext();
+  const { filters, page, setPage, toggleWishList, isWishListed } = useCarContext();
 
   const router = useRouter();
 
@@ -61,11 +60,7 @@ const CarList = () => {
     if(page < totalPages) setPage(page + 1)
   }
 
-  const toggleWishList = (id) => {
-    setWishlist(prev => 
-      prev.includes(id) ? prev.filter((itemId) => itemId !== id) : [...prev, id]
-    )
-  }
+  
 
 
   if (loading) return <p>Loading...</p>;
@@ -93,7 +88,7 @@ const CarList = () => {
               <p className="text-gray-900 font-semibold">
                 ${car.price.toLocaleString()}
               </p>
-              <img src={wishlist.includes(car.id) ? "heart-red.png" : "heart.svg"} alt="wishlist" className="cursor-pointer w-5" onClick={(e) => {
+              <img src={isWishListed(car.id) ? "heart-red.png" : "heart.svg"} alt="wishlist" className="cursor-pointer w-5" onClick={(e) => {
                 e.stopPropagation(); 
                 toggleWishList(car.id)}}/>
               </div>

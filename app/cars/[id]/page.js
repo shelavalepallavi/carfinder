@@ -1,5 +1,7 @@
+'use client'
 import React from 'react'
 import cars from '../../../data/dummy_car_data.json';
+import { useCarContext } from '@/app/context/CarContext';
 
 
 export async function generateStaticParams() {
@@ -9,9 +11,12 @@ export async function generateStaticParams() {
 }
 
 const Page = async ({params}) => {
+  const { isWishlisted, toggleWishlist } = useCarContext();
   const {id} = params
   const car = cars.find(c => c.id.toString() === id);
   console.log('params:', params);
+
+  
 
 
   if(!car) return <p>Car not found</p>;
@@ -39,7 +44,9 @@ const Page = async ({params}) => {
 
           <p className='text-gray-900 text-xl font-bold'>${car.price.toLocaleString()}</p>
           <div className='flex gap-4'>
-            <button className='px-4 py-2 rounded-md font-semibold border cursor-pointer'><img src="/heart.svg" alt="" /></button>
+            <button className='px-4 py-2 rounded-md font-semibold border cursor-pointer'><img src={isWishlisted(car.id) ? "heart-red.png" : "heart.svg"} alt="wishlist" className="cursor-pointer w-5" onClick={(e) => {
+              e.stopPropagation(); 
+              toggleWishlist(car.id)}}/></button>
             <button className='px-4 py-2 rounded-md font-semibold border hover:bg-gray-900 hover:text-white cursor-pointer'>Buy Now</button>
           </div>
       </div>
