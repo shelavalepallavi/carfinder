@@ -40,7 +40,6 @@ export const CarProvider = ({children}) => {
     setFilters,
     page, 
     setPage,
-    wishlist,
     toggleWishList,
     isWishListed
   };
