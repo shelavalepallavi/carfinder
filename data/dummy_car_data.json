@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "make": "Toyota",
+    "model": "Corolla",
+    "year": 2017,
+    "price": 54587,
+    "fuel": "Petrol",
+    "transmission": "Manual",
+    "image": "/images/toyota-corolla.jpg"
+  },
+  {
+    "id": 2,
+    "make": "Toyota",
+    "model": "Camry",
+    "year": 2016,
+    "price": 52445,
+    "fuel": "Hybrid",
+    "transmission": "Automatic",
+    "image": "/images/toyota-camry.jpg"
+  },
+  {
+    "id": 3,
+    "make": "Toyota",
+    "model": "RAV4",
+    "year": 2016,
+    "price": 52610,
+    "fuel": "Petrol",
+    "transmission": "Manual",
+    "image": "/images/toyota-rav4.jpg"
+  },
+  {
+    "id": 4,
+    "make": "Toyota",
+    "model": "Prius",
+    "year": 2016,
+    "price": 43884,
+    "fuel": "Petrol",
+    "transmission": "Manual",
+    "image": "/images/toyota-prius.jpg"
+  },
+  {
+    "id": 5,
+    "make": "Honda",
+    "model": "Civic",
+    "year": 2020,
+    "price": 39508,
+    "fuel": "Petrol",
+    "transmission": "Automatic",
+    "image": "/images/honda-civic.jpg"
+  },
+  {
+    "id": 6,
+    "make": "Honda",
+    "model": "Accord",
+    "year": 2023,
+    "price": 26829,
+    "fuel": "Electric",
+    "transmission": "Manual",
+    "image": "/images/honda-accord.jpg"
+  },
+  {
+    "id": 7,
+    "make": "Honda",
+    "model": "CR-V",
+    "year": 2023,
+    "price": 44249,
+    "fuel": "Diesel",
+    "transmission": "Automatic",
+    "image": "/images/honda-cv-r.jpg"
+  },
+  {
+    "id": 8,
+    "make": "Honda",
+    "model": "Fit",
+    "year": 2023,
+    "price": 29079,
+    "fuel": "Electric",
+    "transmission": "Automatic",
+    "image": "/images/honda-fit.jpg"
+  },
+  {
+    "id": 9,
+    "make": "Ford",
+    "model": "Mustang",
+    "year": 2015,
+    "price": 37779,
+    "fuel": "Diesel",
+    "transmission": "Automatic",
+    "image": "/images/ford-mustang.jpg"
+  },
+  {
+    "id": 10,
+    "make": "Ford",
+    "model": "F-150",
+    "year": 2021,
+    "price": 30214,
+    "fuel": "Diesel",
+    "transmission": "Automatic",
+    "image": "/images/ford-f-150.jpg"
+  },
+  {
+    "id": 11,
+    "make": "Ford",
+    "model": "Escape",
+    "year": 2023,
+    "price": 21259,
+    "fuel": "Petrol",
+    "transmission": "Automatic",
+    "image": "/images/ford-escape.jpg"
+  },
+  {
+    "id": 12,
+    "make": "Ford",
+    "model": "Explorer",
+    "year": 2020,
+    "price": 22360,
+    "fuel": "Electric",
+    "transmission": "Automatic",
+    "image": "/images/ford-explorer.jpg"
+  },
+  {
+    "id": 13,
+    "make": "Tesla",
+    "model": "Model 3",
+    "year": 2020,
+    "price": 51736,
+    "fuel": "Diesel",
+    "transmission": "Manual",
+    "image": "/images/tesla-model3.jpg"
+  },
+  {
+    "id": 14,
+    "make": "Tesla",
+    "model": "Model S",
+    "year": 2019,
+    "price": 30651,
+    "fuel": "Hybrid",
+    "transmission": "Automatic",
+    "image": "/images/tesla-model-s.jpg"
+  },
+  {
+    "id": 15,
+    "make": "Tesla",
+    "model": "Model X",
+    "year": 2023,
+    "price": 27470,
+    "fuel": "Diesel",
+    "transmission": "Automatic",
+    "image": "/images/tesla-model-x.jpg"
+  },
+  {
+    "id": 16,
+    "make": "Tesla",
+    "model": "Model Y",
+    "year": 2022,
+    "price": 41509,
+    "fuel": "Petrol",
+    "transmission": "Automatic",
+    "image": "/images/tesla-model-y.jpg"
+  },
+  {
+    "id": 17,
+    "make": "BMW",
+    "model": "3 Series",
+    "year": 2017,
+    "price": 36373,
+    "fuel": "Electric",
+    "transmission": "Automatic",
+    "image": "/images/bmw-3series.jpg"
+  },
+  {
+    "id": 18,
+    "make": "BMW",
+    "model": "5 Series",
+    "year": 2023,
+    "price": 53683,
+    "fuel": "Diesel",
+    "transmission": "Automatic",
+    "image": "/images/bmw-5series.jpg"
+  },
+  {
+    "id": 19,
+    "make": "BMW",
+    "model": "X3",
+    "year": 2022,
+    "price": 16770,
+    "fuel": "Petrol",
+    "transmission": "Manual",
+    "image": "/images/bmw-x3.jpg"
+  },
+  {
+    "id": 20,
+    "make": "BMW",
+    "model": "X5",
+    "year": 2017,
+    "price": 38918,
+    "fuel": "Petrol",
+    "transmission": "Manual",
+    "image": "/images/bmw-x5.jpg"
+  },
+  {
+    "id": 21,
+    "make": "Audi",
+    "model": "A3",
+    "year": 2015,
+    "price": 26072,
+    "fuel": "Electric",
+    "transmission": "Manual",
+    "image": "/images/audi-a3.jpg"
+  },
+  {
+    "id": 22,
+    "make": "Audi",
+    "model": "A4",
+    "year": 2016,
+    "price": 35933,
+    "fuel": "Hybrid",
+    "transmission": "Manual",
+    "image": "/images/audi-a4.jpg"
+  },
+  {
+    "id": 23,
+    "make": "Audi",
+    "model": "Q5",
+    "year": 2022,
+    "price": 35688,
+    "fuel": "Diesel",
+    "transmission": "Automatic",
+    "image": "/images/audi-q5.jpg"
+  },
+  {
+    "id": 24,
+    "make": "Audi",
+    "model": "Q7",
+    "year": 2019,
+    "price": 19404,
+    "fuel": "Diesel",
+    "transmission": "Manual",
+    "image": "/images/audi-q7.jpg"
+  },
+  {
+    "id": 25,
+    "make": "Mercedes-Benz",
+    "model": "C-Class",
+    "year": 2016,
+    "price": 31695,
+    "fuel": "Diesel",
+    "transmission": "Automatic",
+    "image": "/images/mercedes-benz-c-class.jpg"
+  },
+  {
+    "id": 26,
+    "make": "Mercedes-Benz",
+    "model": "E-Class",
+    "year": 2020,
+    "price": 61092,
+    "fuel": "Diesel",
+    "transmission": "Automatic",
+    "image": "/images/mercedes-benz-e-class.jpg"
+  },
+  {
+    "id": 27,
+    "make": "Mercedes-Benz",
+    "model": "GLC",
+    "year": 2023,
+    "price": 56188,
+    "fuel": "Electric",
+    "transmission": "Manual",
+    "image": "/images/mercedes-benz-glc.jpg"
+  },
+  {
+    "id": 28,
+    "make": "Mercedes-Benz",
+    "model": "GLE",
+    "year": 2015,
+    "price": 16201,
+    "fuel": "Petrol",
+    "transmission": "Automatic",
+    "image": "/images/mercedes-benz-gle.jpg"
+  },
+  {
+    "id": 29,
+    "make": "Mahindra",
+    "model": "Thar Black",
+    "year": 2023,
+    "price": 17200,
+    "fuel": "Diesel",
+    "transmission": "Manual",
+    "image": "/images/mahindra-thar-black.jpg"
+  },
+  {
+    "id": 30,
+    "make": "Mahindra",
+    "model": "Thar Green",
+    "year": 2022,
+    "price": 16900,
+    "fuel": "Petrol",
+    "transmission": "Automatic",
+    "image": "/images/mahindra-thar-green.jpg"
+  }
+]
