@@ -15,9 +15,9 @@ const page = () => {
 
   return (
     <div className='px-48 py-8'>
-      <h2 className='text-2xl font-semibold mb-4 text-center'>Wishlisted Items</h2>
+      <h2 className='text-2xl font-semibold mb-8 text-center'>Wishlisted Items</h2>
       <div>
-        <div className='grid grid-cols-4 gap-4 pb-4'>
+        <div className='grid grid-cols-4 gap-4 pb-6'>
           <p className='text-xl font-semibold'>Product</p>
           <p className='text-xl font-semibold'>Name</p>
           <p className='text-xl font-semibold'>Price</p>
@@ -30,7 +30,10 @@ const page = () => {
             </Link>
             <h2 className='font-semibold text-gray-600 '>{car.make} - {car.model}</h2>
             <p className='font-semibold'>${car.price.toLocaleString()}</p>
-            <img src="/cancel.svg" alt="" className='cursor-pointer w-5' onClick={() => toggleWishList(car.id)}/>
+            <div className='relative group'>
+            <img src="/cancel.svg" alt="remove" className='cursor-pointer w-5' onClick={() => toggleWishList(car.id)}/>
+            <div className="absolute bottom-full mb-1 hidden group-hover:block text-xs bg-gray-900 text-white px-2 py-1 rounded shadow">Remove</div>
+            </div>
           </div>
         ))}
       </div>

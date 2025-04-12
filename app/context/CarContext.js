@@ -1,6 +1,7 @@
 'use client';
 
 import { createContext, useContext, useEffect, useState } from 'react';
+import toast from 'react-hot-toast';
 
 const CarContext = createContext();
 
@@ -25,13 +26,37 @@ export const CarProvider = ({children}) => {
     localStorage.setItem('wishlist', JSON.stringify(wishlist))
   }, [wishlist])
 
-  const toggleWishList = (id) => {
-    setWishlist(prev => 
-      prev.includes(id) ? prev.filter((carId) => carId !== id) : [...prev, id]
-    )
-  }
-
   const isWishListed = (id) => wishlist.includes(id);
+
+  const toggleWishList = (id) => {
+    const isWish = isWishListed(id);
+  
+    const updated = isWish
+      ? wishlist.filter((carId) => carId !== id)
+      : [...wishlist, id];
+  
+    setWishlist(updated);
+    if (isWish) {
+      toast.success("Removed from Wishlist", {
+        style: {
+          background: '#ff4d4d',
+          color: '#fff',
+        },
+        icon: '',
+      });
+    } else {
+      toast.success("Added to Wishlist", {
+        style: {
+          background: '#333',
+          color: '#fff',
+        },
+        icon: '❤️',
+      });
+    }
+  };
+  
+
+ 
   
   
 

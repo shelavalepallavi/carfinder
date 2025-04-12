@@ -63,7 +63,7 @@ const CarList = () => {
   
 
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <p className="px-8 py-4">Loading...</p>;
   if (error) return <p>{error}</p>;
   return (
     <div className="px-8 py-4">
