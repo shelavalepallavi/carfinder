@@ -3,8 +3,9 @@ import React, { useState } from 'react'
 import { useCarContext } from '../context/CarContext'
 
 const Filter = () => {
-  const {filters, setFilters, setPage, theme, toggleTheme} = useCarContext();
+  const {filters, setFilters, setPage, theme} = useCarContext();
   const [tempFilters, setTempFilters] = useState(filters);
+  const [open, setOpen] = useState(false)
   
 
   return (

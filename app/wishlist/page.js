@@ -14,20 +14,20 @@ const page = () => {
   }
 
   return (
-    <div className={`w-full min-h-screen px-48 pt-8 pb-20 ${theme === 'dark'? 'bg-[#1E2936] text-white':''}`}>
+    <div className={`w-full min-h-screen px-4 sm:px-8 md:px-16 lg:px-32 xl:px-48 pt-8 pb-20 ${theme === 'dark'? 'bg-[#1E2936] text-white':''}`}>
       <h2 className='text-2xl font-semibold mb-8 text-center'>Wishlisted Items</h2>
       <div>
-        <div className='grid grid-cols-4 gap-4 pb-6'>
+        <div className='hidden md:grid grid-cols-4 gap-4 pb-6'>
           <p className='text-xl font-semibold'>Product</p>
           <p className='text-xl font-semibold'>Name</p>
           <p className='text-xl font-semibold'>Price</p>
           <p className='text-xl font-semibold'>Remove</p>
         </div>
         {wishlistedCars.map(car => (
-          <div key={car.id} className='grid grid-cols-4 items-center py-8 border-y border-gray-300'>
-            <Link href={`/cars/${car.id}`}>
-            <img src={car.image} alt="" className='w-32 rounded-md aspect-video object-cover'/>
-            </Link>
+          <div key={car.id} className='flex flex-col md:grid md:grid-cols-4 items-center py-8 border-y border-gray-300'>
+             <Link href={`/cars/${car.id}`} className="w-full md:w-auto">
+        <img src={car.image} alt="" className="w-full md:w-32 rounded-md aspect-video object-cover" />
+      </Link>
             <h2 className={`font-semibold ${theme === 'dark' ? 'text-white':'text-gray-600'}`}>{car.make} - {car.model}</h2>
             <p className='font-semibold'>${car.price.toLocaleString()}</p>
             <div className='relative group'>

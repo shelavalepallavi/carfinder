@@ -71,7 +71,7 @@ const CarList = () => {
         {cars.map((car) => (
           <div
             key={car.id}
-            className={`w-80 border border-gray-200 rounded-lg shadow-sm cursor-pointer  hover:shadow-lg transition ${theme === 'dark'? 'bg-gray-900 text-white border-0':'bg-white'}`}
+            className={`w-full border border-gray-200 rounded-lg shadow-sm cursor-pointer  hover:shadow-lg transition ${theme === 'dark'? 'bg-gray-900 text-white border-0':'bg-white'}`}
             onClick={() => router.push(`/cars/${car.id}`)}
           >
             <img
