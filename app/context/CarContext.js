@@ -16,15 +16,26 @@ export const CarProvider = ({children}) => {
   })
   const [page, setPage] = useState(1)
   const [wishlist, setWishlist] = useState([]);
+  const [theme, setTheme] = useState('light')
 
   useEffect(() => {
     const stored = JSON.parse(localStorage.getItem('wishlist')) || [];
     setWishlist(stored);
+    const storedTheme = localStorage.getItem('theme');
+    if(storedTheme){
+      setTheme(storedTheme)
+    }
   }, [])
 
   useEffect(() => {
     localStorage.setItem('wishlist', JSON.stringify(wishlist))
-  }, [wishlist])
+    localStorage.setItem('theme', theme)
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [wishlist, theme])
 
   const isWishListed = (id) => wishlist.includes(id);
 
@@ -56,6 +67,10 @@ export const CarProvider = ({children}) => {
   };
   
 
+  const toggleTheme = () => {
+    setTheme(prev => (prev === 'light' ? 'dark' : 'light'))
+  }
+
  
   
   
@@ -67,7 +82,9 @@ export const CarProvider = ({children}) => {
     setPage,
     wishlist,
     toggleWishList,
-    isWishListed
+    isWishListed,
+    theme,
+    toggleTheme
   };
   return <CarContext.Provider value={value}>
     {children}

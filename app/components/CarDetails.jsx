@@ -30,7 +30,7 @@ const CarDetails = ({car}) => {
             <button className='px-4 py-2 rounded-md font-semibold border cursor-pointer' onClick={(e) => {
               e.stopPropagation(); 
               toggleWishList(car.id)}}><img src={isWishListed(car.id) ? "/heart-red.png" : "/heart.svg"} alt="wishlist" className="cursor-pointer w-5" /></button>
-            <button className='px-4 py-2 rounded-md font-semibold border hover:bg-gray-900 hover:text-white cursor-pointer'>Buy Now</button>
+            <button className='px-4 py-2 rounded-md font-semibold text-indigo-800 border border-indigo-800 hover:bg-indigo-700 hover:text-white cursor-pointer'>Buy Now</button>
           </div>
       </div>
     </div>

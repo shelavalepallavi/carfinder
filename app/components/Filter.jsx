@@ -3,11 +3,12 @@ import React, { useState } from 'react'
 import { useCarContext } from '../context/CarContext'
 
 const Filter = () => {
-  const {filters, setFilters, setPage} = useCarContext();
+  const {filters, setFilters, setPage, theme, toggleTheme} = useCarContext();
   const [tempFilters, setTempFilters] = useState(filters);
+  
 
   return (
-    <div className='w-64 shadow-sm min-h-[100vh] p-4 rounded-md'>
+    <div className={`w-64 shadow-sm min-h-[100vh] p-4 rounded-md ${theme === 'dark'? 'bg-[#171717] text-white':''}`}>
       <h2 className='text-lg font-semibold text-center mb-4'>Filter Cars</h2>
 
       <div className='flex flex-col gap-3'>
@@ -84,7 +85,7 @@ const Filter = () => {
         
         
         >Reset Filters</button>
-        <button className='px-4 py-2 font-semibold rounded-md cursor-pointer border border-zinc-900 hover:bg-zinc-900 hover:text-white' onClick={() => {
+        <button className='px-4 py-2 font-semibold rounded-md cursor-pointer bg-indigo-700 text-white  hover:bg-indigo-800' onClick={() => {
           setFilters(tempFilters);
           setPage(1)
         }}>Apply</button>

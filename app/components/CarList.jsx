@@ -11,7 +11,7 @@ const CarList = () => {
   const [total, setTotal] = useState(0);
   const limit = 10;
 
-  const { filters, page, setPage, toggleWishList, isWishListed } = useCarContext();
+  const { filters, page, setPage, toggleWishList, isWishListed, theme } = useCarContext();
 
   const router = useRouter();
 
@@ -63,15 +63,15 @@ const CarList = () => {
   
 
 
-  if (loading) return <p className="px-8 py-4">Loading...</p>;
+  if (loading) return <p className="px-6">Loading...</p>;
   if (error) return <p>{error}</p>;
   return (
-    <div className="px-8 py-4">
+    <div className="px-6">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-8">
         {cars.map((car) => (
           <div
             key={car.id}
-            className="w-80 border border-gray-200 rounded-lg shadow-sm cursor-pointer  hover:shadow-lg transition"
+            className={`w-80 border border-gray-200 rounded-lg shadow-sm cursor-pointer  hover:shadow-lg transition ${theme === 'dark'? 'bg-[#171717] text-white border-0':''}`}
             onClick={() => router.push(`/cars/${car.id}`)}
           >
             <img
@@ -83,7 +83,7 @@ const CarList = () => {
               <h2 className="font-semibold text-xl">
                 {car.make} - {car.model}
               </h2>
-              <p className="text-gray-600">Year: {car.year}</p>
+              <p className={`${theme === 'dark'?'text-white':'text-gray-600'}`}>Year: {car.year}</p>
               <div className="flex justify-between items-center">
               <p className="text-gray-900 font-semibold">
                 ${car.price.toLocaleString()}
