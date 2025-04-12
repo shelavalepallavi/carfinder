@@ -38,6 +38,14 @@ A sleek and responsive **Car Finder Web Application** built with **Next.js**, **
 
 ---
 
+### 📱 Mobile View (Light Mode)
+![Mobile Light](public/mobile-light.png)
+
+---
+
+### 🌑 Mobile View (Dark Mode)
+![Mobile Dark](public/mobile-dark.png)
+
 ## 🛠️ Tech Stack
 
 | Category             | Tech                                                   |
