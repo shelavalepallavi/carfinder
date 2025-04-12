@@ -4,7 +4,7 @@ import { useCarContext } from '../context/CarContext'
 import cars from '../../data/dummy_car_data.json';
 import Link from 'next/link';
 
-const page = () => {
+const Page = () => {
   const {wishlist, toggleWishList, theme} = useCarContext();
 
   const wishlistedCars = cars.filter(car => wishlist.includes(car.id));
@@ -41,4 +41,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
