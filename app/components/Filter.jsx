@@ -9,7 +9,15 @@ const Filter = () => {
   
 
   return (
-    <div className={`w-64 shadow-sm min-h-[100vh] p-4 rounded-md ${theme === 'dark'? 'bg-gray-900 text-white':'bg-white'}`}>
+    <>
+    <div className='md:hidden'>
+      <img src={`${theme === 'dark'? '/filter-light.svg':'/filter.svg'}`} alt="filter" className='cursor-pointer' onClick={() => setOpen(!open)} />
+    </div>
+
+    <div className={`${open ? 'block':'hidden'} w-64 shadow-sm min-h-[100vh] p-4 rounded-md md:block fixed md:static top-0 left-0 z-50 ${theme === 'dark'? ' bg-gray-900 text-white':'bg-white'}`}>
+    <div className="md:hidden flex justify-end mb-2">
+          <button onClick={() => setOpen(false)} className="text-xl font-bold">×</button>
+        </div>
       <h2 className='text-lg font-semibold text-center mb-4'>Filter Cars</h2>
 
       <div className='flex flex-col gap-3'>
@@ -94,6 +102,7 @@ const Filter = () => {
       </div>
 
     </div>
+    </>
   )
 }
 

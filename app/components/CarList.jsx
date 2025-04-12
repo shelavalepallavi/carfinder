@@ -96,7 +96,7 @@ const CarList = () => {
           </div>
         ))}
       </div>
-      <div className="flex justify-between">
+      <div className="flex justify-between items-center">
         <button className={`font-semibold border border-gray-700 rounded-md px-4 py-2 cursor-pointer hover:bg-gray-900 hover:text-white transition-all ${theme === 'dark'? 'text-white border-white hover:border-transparent':''}`} onClick={handlePrevious} disabled={page === 1}>Previous</button>
         <span className={`${theme === 'dark'? 'text-white':''}`}>Page {page} of {totalPages}</span>
         <button className={`font-semibold border border-gray-700 rounded-md px-4 py-2 cursor-pointer hover:bg-gray-900 hover:text-white transition-all ${theme === 'dark'? 'text-white border-white hover:border-transparent':''}`} onClick={handleNext} disabled={page === totalPages}>Next</button>
