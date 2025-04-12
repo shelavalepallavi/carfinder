@@ -16,7 +16,10 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "CarFinder",
-  description: "",
+  description: "My Car Finder App",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
