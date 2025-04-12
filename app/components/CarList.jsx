@@ -89,9 +89,12 @@ const CarList = () => {
               <p className={`font-semibold ${theme === 'dark'? 'text-white': 'text-gray-900'}`}>
                 ${car.price.toLocaleString()}
               </p>
+              <div className="relative group">
               <img src={isWishListed(car.id) ? "heart-red.png" : theme === 'dark' ? "heart-light.svg":'heart.svg'} alt="wishlist" className="cursor-pointer w-5" onClick={(e) => {
                 e.stopPropagation(); 
                 toggleWishList(car.id)}}/>
+                <div className="absolute bottom-full mb-1 hidden group-hover:block text-xs bg-indigo-800 text-white font-semibold px-2 py-2 rounded shadow">Add to wishlist</div>
+              </div>
               </div>
             </div>
           </div>
