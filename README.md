@@ -19,22 +19,22 @@ A sleek and responsive **Car Finder Web Application** built with **Next.js**, **
 ## 📸 Screenshots
 
 ### 🏠 Home Page (Light Mode)
-![Home Light](https://yourdomain.com/screenshots/home-light.png)
+![Home Light](public/home-light.png)
 
 ---
 
 ### 🌙 Home Page (Dark Mode)
-![Home Dark](https://yourdomain.com/screenshots/home-dark.png)
+![Home Dark](public/home-dark.png)
 
 ---
 
 ### 💖 Wishlisted Cars
-![Wishlist](https://yourdomain.com/screenshots/wishlist.png)
+![Wishlist](public/wishlist.png)
 
 ---
 
 ### 🚘 Car Details View
-![Car Details](https://yourdomain.com/screenshots/car-details.png)
+![Car Details](public/car-details.png)
 
 ---
 
@@ -104,11 +104,21 @@ carfinder/
 
 ```
 
-🤝 Contributing
-Contributions are welcome!
-Feel free to fork, create a feature branch, and submit a pull request 🚀
-
 
 🙏 Acknowledgments
 
 Unsplash and Pixels for placeholder car images
+
+
+## 🔗 Links
+
+- **👨‍💻 Developed by:** Your Name
+- **💻 GitHub:** [https://github.com/shelavalepallavi/carfinder.git](https://github.com/shelavalepallavi/carfinder.git)
+- **🌐 Live Demo:** [carfinder-two.vercel.app](https://carfinder-two.vercel.app)
+  
+Let me know if you want to add a profile image or badge too!
+
+
+🤝 Contributing
+Contributions are welcome!
+Feel free to fork, create a feature branch, and submit a pull request 🚀
