@@ -58,6 +58,22 @@ const Filter = () => {
         </div>
       </div>
 
+      <div>
+      <label className='font-semibold'>Seating Capacity</label>
+      <div className='flex gap-4 mt-4'>
+        {[4,5,7].map(seat => (
+          <button key={seat} className={`px-4 py-1 border  font-semibold rounded cursor-pointer hover:bg-indigo-800 hover:text-white
+             ${theme === 'dark'?'text-white hover:border-transparent':'border-indigo-800 text-indigo-800'}
+             ${tempFilters.seating === seat 
+              ?'bg-indigo-800 text-white border-transparent' : 'hover:bg-indigo-800 hover:text-white'}
+             `}
+           onClick={() => setTempFilters(prev => ({...prev, seating: prev.seating === seat ? null : seat}))}>
+            {seat}
+          </button>
+        ))}
+      </div>
+      </div>
+
 
       <div className='flex flex-col gap-2'>
       <label className='font-semibold'>Price Range</label>

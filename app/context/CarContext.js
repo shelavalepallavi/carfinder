@@ -13,6 +13,7 @@ export const CarProvider = ({children}) => {
     minPrice: "",
     maxPrice: "",
     sortBy: "",
+    seating:"",
   })
   const [page, setPage] = useState(1)
   const [wishlist, setWishlist] = useState([]);

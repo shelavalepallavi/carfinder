@@ -14,6 +14,7 @@ export async function GET(request) {
   const page = parseInt(searchParams.get("page") || "1");
   const limit = parseInt(searchParams.get("limit") || "10");
   const sortBy = searchParams.get("sortBy");
+  const seating = searchParams.get('seating')
 
   let filterdCars= [...cars]
 
@@ -33,6 +34,9 @@ export async function GET(request) {
   }
   if(search){
     filterdCars = filterdCars.filter(car => car.make.toLowerCase().includes(search.toLowerCase()));
+  }
+  if(seating){
+    filterdCars = filterdCars.filter(car => car.seating === parseInt(seating))
   }
   if (sortBy === "asc") {
     filterdCars.sort((a, b) => a.price - b.price);

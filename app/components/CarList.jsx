@@ -29,6 +29,7 @@ const CarList = () => {
     if (filters.fuelTypes?.length) {
       filters.fuelTypes.forEach(fuel => params.append("fuelTypes", fuel));
     }
+    if(filters.seating) params.append('seating', filters.seating.toString())
   
     return params.toString();
   };

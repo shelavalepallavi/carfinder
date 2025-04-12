@@ -7,6 +7,7 @@
     "price": 54587,
     "fuel": "Petrol",
     "transmission": "Manual",
+    "seating": 5,
     "image": "/images/toyota-corolla.jpg"
   },
   {
@@ -17,6 +18,7 @@
     "price": 52445,
     "fuel": "Hybrid",
     "transmission": "Automatic",
+    "seating": 4,
     "image": "/images/toyota-camry.jpg"
   },
   {
@@ -27,6 +29,7 @@
     "price": 52610,
     "fuel": "Petrol",
     "transmission": "Manual",
+    "seating": 7,
     "image": "/images/toyota-rav4.jpg"
   },
   {
@@ -37,6 +40,7 @@
     "price": 43884,
     "fuel": "Petrol",
     "transmission": "Manual",
+    "seating": 4,
     "image": "/images/toyota-prius.jpg"
   },
   {
@@ -47,6 +51,7 @@
     "price": 39508,
     "fuel": "Petrol",
     "transmission": "Automatic",
+    "seating": 5,
     "image": "/images/honda-civic.jpg"
   },
   {
@@ -57,6 +62,7 @@
     "price": 26829,
     "fuel": "Electric",
     "transmission": "Manual",
+    "seating": 7,
     "image": "/images/honda-accord.jpg"
   },
   {
@@ -67,6 +73,7 @@
     "price": 44249,
     "fuel": "Diesel",
     "transmission": "Automatic",
+    "seating": 4,
     "image": "/images/honda-cv-r.jpg"
   },
   {
@@ -77,6 +84,7 @@
     "price": 29079,
     "fuel": "Electric",
     "transmission": "Automatic",
+    "seating": 5,
     "image": "/images/honda-fit.jpg"
   },
   {
@@ -87,6 +95,7 @@
     "price": 37779,
     "fuel": "Diesel",
     "transmission": "Automatic",
+    "seating": 7,
     "image": "/images/ford-mustang.jpg"
   },
   {
@@ -97,6 +106,7 @@
     "price": 30214,
     "fuel": "Diesel",
     "transmission": "Automatic",
+    "seating": 4,
     "image": "/images/ford-f-150.jpg"
   },
   {
@@ -107,6 +117,7 @@
     "price": 21259,
     "fuel": "Petrol",
     "transmission": "Automatic",
+    "seating": 5,
     "image": "/images/ford-escape.jpg"
   },
   {
@@ -117,6 +128,7 @@
     "price": 22360,
     "fuel": "Electric",
     "transmission": "Automatic",
+    "seating": 7,
     "image": "/images/ford-explorer.jpg"
   },
   {
@@ -127,6 +139,7 @@
     "price": 51736,
     "fuel": "Diesel",
     "transmission": "Manual",
+    "seating": 4,
     "image": "/images/tesla-model3.jpg"
   },
   {
@@ -137,6 +150,7 @@
     "price": 30651,
     "fuel": "Hybrid",
     "transmission": "Automatic",
+    "seating": 5,
     "image": "/images/tesla-model-s.jpg"
   },
   {
@@ -147,6 +161,7 @@
     "price": 27470,
     "fuel": "Diesel",
     "transmission": "Automatic",
+    "seating": 7,
     "image": "/images/tesla-model-x.jpg"
   },
   {
@@ -157,6 +172,7 @@
     "price": 41509,
     "fuel": "Petrol",
     "transmission": "Automatic",
+    "seating": 4,
     "image": "/images/tesla-model-y.jpg"
   },
   {
@@ -167,6 +183,7 @@
     "price": 36373,
     "fuel": "Electric",
     "transmission": "Automatic",
+    "seating": 5,
     "image": "/images/bmw-3series.jpg"
   },
   {
@@ -177,6 +194,7 @@
     "price": 53683,
     "fuel": "Diesel",
     "transmission": "Automatic",
+    "seating": 7,
     "image": "/images/bmw-5series.jpg"
   },
   {
@@ -187,6 +205,7 @@
     "price": 16770,
     "fuel": "Petrol",
     "transmission": "Manual",
+    "seating": 4,
     "image": "/images/bmw-x3.jpg"
   },
   {
@@ -197,6 +216,7 @@
     "price": 38918,
     "fuel": "Petrol",
     "transmission": "Manual",
+    "seating": 5,
     "image": "/images/bmw-x5.jpg"
   },
   {
@@ -207,6 +227,7 @@
     "price": 26072,
     "fuel": "Electric",
     "transmission": "Manual",
+    "seating": 7,
     "image": "/images/audi-a3.jpg"
   },
   {
@@ -217,6 +238,7 @@
     "price": 35933,
     "fuel": "Hybrid",
     "transmission": "Manual",
+    "seating": 4,
     "image": "/images/audi-a4.jpg"
   },
   {
@@ -227,6 +249,7 @@
     "price": 35688,
     "fuel": "Diesel",
     "transmission": "Automatic",
+    "seating": 5,
     "image": "/images/audi-q5.jpg"
   },
   {
@@ -237,6 +260,7 @@
     "price": 19404,
     "fuel": "Diesel",
     "transmission": "Manual",
+    "seating": 7,
     "image": "/images/audi-q7.jpg"
   },
   {
@@ -247,6 +271,7 @@
     "price": 31695,
     "fuel": "Diesel",
     "transmission": "Automatic",
+    "seating": 4,
     "image": "/images/mercedes-benz-c-class.jpg"
   },
   {
@@ -257,6 +282,7 @@
     "price": 61092,
     "fuel": "Diesel",
     "transmission": "Automatic",
+    "seating": 5,
     "image": "/images/mercedes-benz-e-class.jpg"
   },
   {
@@ -267,6 +293,7 @@
     "price": 56188,
     "fuel": "Electric",
     "transmission": "Manual",
+    "seating": 7,
     "image": "/images/mercedes-benz-glc.jpg"
   },
   {
@@ -277,6 +304,7 @@
     "price": 16201,
     "fuel": "Petrol",
     "transmission": "Automatic",
+    "seating": 4,
     "image": "/images/mercedes-benz-gle.jpg"
   },
   {
@@ -287,6 +315,7 @@
     "price": 17200,
     "fuel": "Diesel",
     "transmission": "Manual",
+    "seating": 7,
     "image": "/images/mahindra-thar-black.jpg"
   },
   {
@@ -297,6 +326,7 @@
     "price": 16900,
     "fuel": "Petrol",
     "transmission": "Automatic",
+    "seating": 7,
     "image": "/images/mahindra-thar-green.jpg"
   }
 ]
