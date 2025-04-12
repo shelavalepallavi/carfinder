@@ -63,15 +63,15 @@ const CarList = () => {
   
 
 
-  if (loading) return <p className="px-6">Loading...</p>;
+  if (loading) return <p className={`px-6 pt-6 ${theme === 'dark'? 'text-white':''}`}>Loading...</p>;
   if (error) return <p>{error}</p>;
   return (
-    <div className="px-6">
+    <div className="px-6 pt-6">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-8">
         {cars.map((car) => (
           <div
             key={car.id}
-            className={`w-80 border border-gray-200 rounded-lg shadow-sm cursor-pointer  hover:shadow-lg transition ${theme === 'dark'? 'bg-[#171717] text-white border-0':''}`}
+            className={`w-80 border border-gray-200 rounded-lg shadow-sm cursor-pointer  hover:shadow-lg transition ${theme === 'dark'? 'bg-gray-900 text-white border-0':'bg-white'}`}
             onClick={() => router.push(`/cars/${car.id}`)}
           >
             <img
@@ -83,12 +83,12 @@ const CarList = () => {
               <h2 className="font-semibold text-xl">
                 {car.make} - {car.model}
               </h2>
-              <p className={`${theme === 'dark'?'text-white':'text-gray-600'}`}>Year: {car.year}</p>
+              <p className={`${theme === 'dark'?'text-gray-300':'text-gray-600'}`}>Year: {car.year}</p>
               <div className="flex justify-between items-center">
-              <p className="text-gray-900 font-semibold">
+              <p className={`font-semibold ${theme === 'dark'? 'text-white': 'text-gray-900'}`}>
                 ${car.price.toLocaleString()}
               </p>
-              <img src={isWishListed(car.id) ? "heart-red.png" : "heart.svg"} alt="wishlist" className="cursor-pointer w-5" onClick={(e) => {
+              <img src={isWishListed(car.id) ? "heart-red.png" : theme === 'dark' ? "heart-light.svg":'heart.svg'} alt="wishlist" className="cursor-pointer w-5" onClick={(e) => {
                 e.stopPropagation(); 
                 toggleWishList(car.id)}}/>
               </div>
@@ -97,9 +97,9 @@ const CarList = () => {
         ))}
       </div>
       <div className="flex justify-between">
-        <button className="font-semibold border border-gray-700 rounded-md px-4 py-2 cursor-pointer hover:bg-gray-900 hover:text-white transition-all" onClick={handlePrevious} disabled={page === 1}>Previous</button>
-        <span>Page {page} of {totalPages}</span>
-        <button className="font-semibold border border-gray-700 rounded-md px-4 py-2 cursor-pointer hover:bg-gray-900 hover:text-white transition-all" onClick={handleNext} disabled={page === totalPages}>Next</button>
+        <button className={`font-semibold border border-gray-700 rounded-md px-4 py-2 cursor-pointer hover:bg-gray-900 hover:text-white transition-all ${theme === 'dark'? 'text-white border-white hover:border-transparent':''}`} onClick={handlePrevious} disabled={page === 1}>Previous</button>
+        <span className={`${theme === 'dark'? 'text-white':''}`}>Page {page} of {totalPages}</span>
+        <button className={`font-semibold border border-gray-700 rounded-md px-4 py-2 cursor-pointer hover:bg-gray-900 hover:text-white transition-all ${theme === 'dark'? 'text-white border-white hover:border-transparent':''}`} onClick={handleNext} disabled={page === totalPages}>Next</button>
       </div>
     </div>
   );

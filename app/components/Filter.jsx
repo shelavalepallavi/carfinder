@@ -8,7 +8,7 @@ const Filter = () => {
   
 
   return (
-    <div className={`w-64 shadow-sm min-h-[100vh] p-4 rounded-md ${theme === 'dark'? 'bg-[#171717] text-white':''}`}>
+    <div className={`w-64 shadow-sm min-h-[100vh] p-4 rounded-md ${theme === 'dark'? 'bg-gray-900 text-white':'bg-white'}`}>
       <h2 className='text-lg font-semibold text-center mb-4'>Filter Cars</h2>
 
       <div className='flex flex-col gap-3'>
@@ -16,7 +16,7 @@ const Filter = () => {
 
       <div className='flex flex-col gap-2'>
         <label className='font-semibold'>Brand</label>
-        <select className='w-full outline-0 border-[0.5px] border-gray-400 rounded-md p-2 cursor-pointer' value={tempFilters.brand} onChange={(e) => setTempFilters(prev => ({...prev, brand:e.target.value}))}>
+        <select className={`w-full outline-0 border-[0.5px] border-gray-400 rounded-md p-2 cursor-pointer ${theme === 'dark'? 'bg-gray-800 text-white' :''}`} value={tempFilters.brand} onChange={(e) => setTempFilters(prev => ({...prev, brand:e.target.value}))}>
           <option value="">All Brands</option>
           <option value="Toyota">Toyota</option>
           <option value="Honda">Honda</option>
@@ -60,7 +60,7 @@ const Filter = () => {
 
       <div className="flex flex-col gap-2">
       <label className='font-semibold'>Sort by</label>
-      <select className='w-full outline-0 border-[0.5px] border-gray-400 rounded-md p-2 cursor-pointer' value={tempFilters.sortBy || ""} onChange={e => setTempFilters(prev => ({...prev, sortBy:e.target.value}))}>
+      <select className={`w-full outline-0 border-[0.5px] border-gray-400 rounded-md p-2 cursor-pointer ${theme === 'dark'? 'bg-gray-800': ''}`} value={tempFilters.sortBy || ""} onChange={e => setTempFilters(prev => ({...prev, sortBy:e.target.value}))}>
           <option value="">None</option>
           <option value="asc">Price: Low to High</option>
           <option value="desc">Price: High to Low</option>
