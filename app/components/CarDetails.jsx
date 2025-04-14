@@ -6,11 +6,11 @@ const CarDetails = ({car}) => {
   const {  toggleWishList, isWishListed, theme } = useCarContext();
   return (
     <div className={`w-full min-h-screen px-10 pt-12 flex flex-col md:flex-row gap-12 ${theme === 'dark'? 'bg-gray-800 text-white':''}`}>
-      <img src={car.image} alt={car.make} className='w-full md:w-1/2 h-2/3 aspect-video object-cover rounded-md' />
+      <img src={car.image} alt={car.make} className='w-full md:w-1/2 h-2/3 aspect-video object-cover rounded-md hover:shadow-sm cursor-pointer' />
 
       <div className={`flex flex-col gap-3 ${theme === 'dark'? 'text-white' : 'text-gray-600'}`}>
           <h2 className={`font-semibold text-3xl ${theme === 'dark'? 'text-white': 'text-black'}`}>{car.make} - {car.model}</h2>
-          <p className=''><span>⭐⭐⭐⭐</span> | <span>(289 Reviews)</span></p>
+          <p className=''><span>⭐⭐⭐⭐</span> | <span className='cursor-pointer'>(289 Reviews)</span></p>
           <p className=' text-lg'>Year: {car.year}</p>
           <p className=' text-lg'>Fuel: {car.fuel}</p>
           <p className='text-lg'>Transmission: {car.transmission}</p>
