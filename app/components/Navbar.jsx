@@ -13,7 +13,16 @@ const Navbar = () => {
         <p className="text-2xl font-semibold">CarFinder</p>
       </Link>
       <div className="flex gap-6 items-center">
-        <img src={theme === 'light' ? "/moon.svg" : "/sun.svg"} alt="" className="cursor-pointer " onClick={toggleTheme}/>
+        <div className="cursor-pointer" onClick={toggleTheme}>
+          {theme === 'dark' ? (
+            <img src="/sun.svg"/>
+          ): (
+            <div className="group">
+              <img src="/moon-light.svg" className="block group-hover:hidden"/>
+              <img src="/moon.svg" className="hidden group-hover:block"/>
+            </div>
+          )}
+        </div>
         <div className="relative group">
           <Link href="/wishlist">
             <img src={theme === 'light' ? "/wishlist.svg" : "/wishlist-light.svg"} alt="" className="cursor-pointer" />
