@@ -28,7 +28,7 @@ const CarDetails = ({car}) => {
 
           <p className={`${theme === 'dark'? 'text-while' : 'text-gray-900'} text-xl font-bold`}>${car.price.toLocaleString()}</p>
           <div className='flex gap-4'>
-            <button className='px-4 py-2 rounded-md font-semibold border cursor-pointer' onClick={(e) => {
+            <button className='px-8 py-2 rounded-md font-semibold border cursor-pointer hover:shadow-md' onClick={(e) => {
               e.stopPropagation(); 
               toggleWishList(car.id)}}><img src={isWishListed(car.id) ? "/heart-red.png" : theme === 'dark' ? "/heart-light.svg": '/heart.svg'} alt="wishlist" className="cursor-pointer w-5" /></button>
             <button className={`px-4 py-2 rounded-md font-semibold text-indigo-800 border border-indigo-800 hover:bg-indigo-700 hover:text-white cursor-pointer transition ${theme === 'dark'? 'bg-indigo-700 text-white':''}`}>Buy Now</button>
