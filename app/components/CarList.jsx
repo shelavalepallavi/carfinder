@@ -93,7 +93,9 @@ const CarList = () => {
               <img src={isWishListed(car.id) ? "heart-red.png" : theme === 'dark' ? "heart-light.svg":'heart.svg'} alt="wishlist" className="cursor-pointer w-5" onClick={(e) => {
                 e.stopPropagation(); 
                 toggleWishList(car.id)}}/>
-                <div className="absolute bottom-full mb-1 hidden group-hover:block text-xs bg-indigo-800 text-white font-semibold px-2 py-2 rounded shadow">Add to wishlist</div>
+               <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 hidden group-hover:block text-xs bg-indigo-800 text-white font-medium px-3 py-1.5 rounded-md shadow-lg z-10 whitespace-nowrap">
+    {isWishListed(car.id) ? 'Remove from wishlist' : 'Add to wishlist'}
+  </div>
               </div>
               </div>
             </div>
