@@ -59,7 +59,7 @@ A sleek and responsive **Car Finder Web Application** built with **Next.js**, **
 
 ---
 
-## 🚧 Getting Started
+## 🚧 Getting Started.
 
 To run the app locally:
 
