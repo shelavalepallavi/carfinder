@@ -115,7 +115,7 @@ carfinder/
 
 🙏 Acknowledgments
 
-Unsplash and Pixels for placeholder car images
+Unsplash and Pixels for placeholder car images.
 
 
 ## 🔗 Links
