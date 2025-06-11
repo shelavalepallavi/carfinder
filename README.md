@@ -6,13 +6,13 @@ A sleek and responsive **Car Finder Web Application** built with **Next.js**, **
 
 ## ✨ Features
 
-- 🔍 **Car Search** – Instantly find your dream car with live search functionality.
-- 🛠️ **Advanced Filtering** – Filter cars by brand, price, fuel type, and more.
-- 💖 **Wishlist Support** – Save your favorite cars to view them later (stored in `localStorage`).
-- 🌗 **Dark Mode** – Toggle between light and dark themes.
-- ⚡ **Responsive Design** – Looks great on all devices, from mobile to desktop.
-- 🚀 **Fast Performance** – Built with Next.js for optimized performance and routing.
-- 🔔 **Toasts & Notifications** – Smooth feedback using `react-hot-toast`.
+- 🔍 **Car Search** – Instantly find your dream car with live search functionality
+- 🛠️ **Advanced Filtering** – Filter cars by brand, price, fuel type, and more
+- 💖 **Wishlist Support** – Save your favorite cars to view them later (stored in `localStorage`)
+- 🌗 **Dark Mode** – Toggle between light and dark themes
+- ⚡ **Responsive Design** – Looks great on all devices, from mobile to desktop
+- 🚀 **Fast Performance** – Built with Next.js for optimized performance and routing
+- 🔔 **Toasts & Notifications** – Smooth feedback using `react-hot-toast`
 
 ---
 
