@@ -16,7 +16,7 @@ A sleek and responsive **Car Finder Web Application** built with **Next.js**, **
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshots ✨
 
 ### 🏠 Home Page (Light Mode)
 ![Home Light](public/home-light.png)
